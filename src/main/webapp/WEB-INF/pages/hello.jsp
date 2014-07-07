@@ -4,23 +4,61 @@
 
 
 
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Bootstrap Form With Spring Mvc Example</title>
+<link href="<c:url value="/resources/css/bootstrap.css" />" rel="stylesheet">
+</head>
 <body>
-	<h1>Subida de ficheros</h1>
-	<form method="POST" enctype="multipart/form-data"
-		action="subir">
-		Fichero subida 1: <input type="file" name="file1"><br />  
-		Fichero subida 2:<input type="file" name="file2"><br />
-		Fichero subida 3: <input type="file" name="file3"><br />
-		Fichero subida 4: <input type="file" name="file4"><br />
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span12">
+				<fieldset>
+				<legend>Subida</legend>
+				<form class="form-horizontal" method="POST" enctype="multipart/form-data" action="subir">
+					<div class="control-group">
+						<label class="control-label">Primer fichero</label>
+						<div class="controls">
+							 <input type="file" name="file1">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">Segundo fichero</label>
+						<div class="controls">
+							 <input type="file" name="file2" >
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">Tercer fichero</label>
+						<div class="controls">
+							 <input type="file" name="file3" >
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">Cuarto fichero</label>
+						<div class="controls">
+							 <input type="file" name="file4" >
+						</div>
+					</div>
+					<br>
+					<div class="form-actions">
+						<button type="submit" class="btn btn-success" value="Upload">Submit</button>
+					</div>
+				</form>
+				</fieldset>
+			</div>
+		</div>
+	</div>	
+	
+	
 		
-		 <input type="submit"
-			value="Upload"> subir cuatro ficheros e invocar al servicio
-	</form>
-
-
-	
-
-	
 </body>
 </html>
+
+
+
+
+
+
