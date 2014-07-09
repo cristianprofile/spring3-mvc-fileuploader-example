@@ -9,3 +9,5 @@ commands:
 
 -  mvn clean install jetty:run
 -  localhost:8080/cargaCatalogoErrores
+
+![Screenshot example](/images/screenshot.png?raw=true "Screenshot example")
