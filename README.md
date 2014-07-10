@@ -1,4 +1,4 @@
-spring3-mvc-fileuploader-example with spring io platform bom
+Spring3 mvc fileuploader example with spring io platform bom
 ================================
 
 Spring mvc file uploader example with java 1.7 and spring 4
