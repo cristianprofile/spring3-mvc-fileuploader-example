@@ -17,7 +17,7 @@
 			<div class="span12">
 				<fieldset>
 				<legend>Subida</legend>
-				<form class="form-horizontal" method="POST" enctype="multipart/form-data" action="subir">
+				<form class="form-horizontal" method="POST" enctype="multipart/form-data" action='<c:url value="/subir" />'>
 					<div class="control-group">
 						<label class="control-label">Primer fichero</label>
 						<div class="controls">
