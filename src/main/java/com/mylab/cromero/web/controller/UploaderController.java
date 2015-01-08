@@ -87,22 +87,18 @@ public class UploaderController {
 			stream.write(bytes);
 			stream.close();
 			logger.debug("Ficheros uploading OK {},{},{}", file1.getName(),file2.getName(), file3.getName());
-			return "Ficheros uploading OK ";
+			return "hello";
 
 		} else {
-			return "Ficheros uploading KO ";
+			return "error";
 		}
 	}
 
-	@ExceptionHandler(value = { MaxUploadSizeExceededException.class })
-	protected String handleMaxUpload(RuntimeException ex, WebRequest request) {
-		logger.error("MaxUploadSizeExceededException Server error");
-		return "MaxUploadSizeExceededException ";
-	}
+	
 
 	@ExceptionHandler(value = { MaxUploadSizeExceededException.class })
 	protected String handleConflict(RuntimeException ex, WebRequest request) {
 		logger.error("Exception on server Server error", ex);
-		return "File uploader error ";
+		return "sizeError";
 	}
 }
