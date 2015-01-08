@@ -105,5 +105,4 @@ public class UploaderController {
 		logger.error("Exception on server Server error", ex);
 		return "File uploader error ";
 	}
-
 }
