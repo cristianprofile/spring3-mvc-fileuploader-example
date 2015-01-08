@@ -30,6 +30,7 @@
 
 		<!-- one of the properties available; the maximum file size in bytes -->
 		<property name="maxUploadSize" value="100000000" />
+		<property name="resolveLazily" value="true"/>
 	</bean>
 	
 	
